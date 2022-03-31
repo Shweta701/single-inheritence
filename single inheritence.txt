@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+namespace ConsoleApp16
+{
+    class A
+    {
+        public string name = "sonu";
+        public void rose()
+        {
+            Console.WriteLine("i am gud");
+        }
+
+        class B : A
+        {
+            public string middlename = "rai";
+        }
+
+
+        class C : A
+        {
+            public string lastname = "sharma";
+        }
+
+
+
+
+        class program
+        {
+            static void Main(string[] args)
+            {
+                C lavi = new C();
+                B monu = new B();
+
+                lavi.rose();
+
+
+
+                Console.WriteLine(lavi.name + " " + lavi.middlename + " " + lavi.lastname);
+                Console.ReadLine();
+
+            }
+
+        }
+
+    }
+}
+
+
+
